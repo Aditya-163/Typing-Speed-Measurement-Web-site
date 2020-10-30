@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Typometer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Heading starts -->
+  <div class="header">
+    <div class="timer">
+      <span>Time (s):</span>
+      <br>
+      <span id="time">60</span>
+    </div>
+
+    <div class="wpmDisplay">
+      <span>WPM:</span>
+      <br>
+      <span id="wpm">0</span>
+    </div>
+  </div>
+  <br><br>
+  <!-- Heading ends -->
+
+  <!-- Content Slide starts -->
+  <div class="content">
+    <!-- Start slide starts! -->
+    <div class="slide" id="start">
+      <input id="startButton" type="button" value="Start">
+      <br><br>
+      <span><a href="#" class="otherPage">Instructions</a></span>
+      <br><br>
+    </div>
+    <!-- Start slide ends -->
+
+    <!-- Slide onClick -->
+    <div class="slide hideDisplay" id="onClickSlide">
+      <span id="onClickCount">3</span>
+      <br><br>
+    </div>
+    <!-- Slide onClick ends -->
+
+    <!-- Word slide starts -->
+    <div class="slide hideDisplay" id="wordSlide">
+      <span id="word">word</span>
+      <br><br>
+    </div>
+    <!-- word slide ends -->
+
+    <!-- Result silde starts -->
+    <div class="slide hideDisplay" id="resultSlide">
+      <span>Your speed is:&nbsp;</span>
+      <span id="resultWPM">100</span>
+      <span>&nbsp;WPM</span>
+      <br><br>
+      <input id="refreshButton" type="button" value="Try Again!">
+      <br><br>
+    </div>
+    <!-- Result slide ends -->
+  </div>
+  <!-- Content slide ends -->
+
+  <!-- Footer starts -->
+  <div class="keyboard hideDisplay">
+    <div class="lineOne">
+      <span class="key">tab</span>
+      <span class="key" id="q">q</span>
+      <span class="key" id="w">w</span>
+      <span class="key" id="e">e</span>
+      <span class="key" id="r">r</span>
+      <span class="key" id="t">t</span>
+      <span class="key" id="y">y</span>
+      <span class="key" id="u">u</span>
+      <span class="key" id="i">i</span>
+      <span class="key" id="o">o</span>
+      <span class="key" id="p">p</span>
+      <span class="key" id="[">[</span>
+      <span class="key" id="]">]</span>
+      <span class="key" id="\">\</span>
+    </div>
+    <div class="lineTwo">
+      <span class="key">caps</span>
+      <span class="key" id="a">a</span>
+      <span class="key" id="s">s</span>
+      <span class="key" id="d">d</span>
+      <span class="key" id="f">f</span>
+      <span class="key" id="g">g</span>
+      <span class="key" id="h">h</span>
+      <span class="key" id="j">j</span>
+      <span class="key" id="k">k</span>
+      <span class="key" id="l">l</span>
+      <span class="key" id=";">;</span>
+      <span class="key" id="'">'</span>
+      <span class="key">enter</span>
+    </div>
+    <div class="lineThree">
+      <span class="key">shift</span>
+      <span class="key" id="z">z</span>
+      <span class="key" id="x">x</span>
+      <span class="key" id="c">c</span>
+      <span class="key" id="v">v</span>
+      <span class="key" id="b">b</span>
+      <span class="key" id="n">n</span>
+      <span class="key" id="m">m</span>
+      <span class="key" id=",">,</span>
+      <span class="key" id=".">.</span>
+      <span class="key" id="/">/</span>
+      <span class="key">shift</span>
+    </div>
+    <div class="lineFour">
+      <!--	<span class="key">ctrl</span>
+				<span class="key">fn</span>
+				<span class="key">win</span>
+				<span class="key">alt</span>	-->
+      <span class="key"></span> <!-- This is a useless key! -->
+      <span class="key" id=" ">space</span>
+      <span class="key"></span> <!-- This is a useless key! -->
+      <!--	<span class="key">alt</span>
+				<span class="key">ctrl</span>
+				<span class="key"></span>
+				<span class="key"></span>
+				<span class="key"></span>	-->
+    </div>
+  </div>
+  <!-- Footer ends -->
+
+  <!-- The below line adds the JS file! -->
+  <script src="logic.js"></script>
+  <!-- -->
+</body>
+
+</html>

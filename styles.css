@@ -1,0 +1,60 @@
+.correct
+{
+	background-color: #00ff08;
+	box-shadow: 0.1em 0.25em #b2c2cf;
+}
+.header
+{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 1.5em;
+}
+.incorrect
+{
+	background-color: #ff0000;
+	box-shadow: 0.1em 0.25em #b2c2cf;
+}
+.hideDisplay
+{
+	visibility: none;
+	display: none;
+}
+.key
+{
+	font-family: sans-serif;
+	font-size: 2em;
+	border: 0.01em solid blue;
+	text-align: center;
+}
+.lineOne
+{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+.lineTwo
+{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+.lineThree
+{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+.lineFour
+{
+	display: grid;
+	grid-template-columns: 25% 50% 25%;
+}
+.otherPage
+{
+	text-decoration: none;
+}
+.slide
+{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 1.5em;
+}
