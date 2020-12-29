@@ -79,8 +79,15 @@ function showResults(contentSlides)
 	var finalSpeed = numOfWords; // Since the time is 60s!
 	document.getElementById("resultWPM").innerHTML = "<b>"+finalSpeed+"</b>";
 }
+//////////////////////////////// Code for generating random words ////////////////////////////////////////////////////////////////////////////
 function getAWord() // This function generates a random word!
 {
+	// var req = new XMLHttpRequest();
+	// req.open("GET","/",false);
+	// req.send();
+	// var retText = req.responseText;
+	// delete req;
+	// return retText;
 	var set = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 	var randWord = [];
 	var l = 5; // l stands for lower limit!
@@ -97,7 +104,7 @@ function getAWord() // This function generates a random word!
 		returnWord += randWord[i];
 	return returnWord;
 }
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 function keyGotPressed(event)
 {
 	var keyEntered = document.getElementById(event.key);
